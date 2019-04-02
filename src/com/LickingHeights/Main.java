@@ -15,10 +15,10 @@ public class Main {
        do{
            number = keyboard.nextInt();
            if (number>computerNumber) {
-               System.out.println("That's not it...Too high!");
+               System.out.println("That's not it...Too high! (Try again)");
            }
            else if(number<computerNumber){
-               System.out.println("That's not it...Too low!");
+               System.out.println("That's not it...Too low! (Try again)");
            }
            else{
                System.out.println("You got the number!!!");
