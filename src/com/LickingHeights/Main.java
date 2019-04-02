@@ -8,11 +8,12 @@ public class Main {
         System.out.println("This is the number guessing game. Pick a number between 1 and 100 inclusive.");
 
         Scanner keyboard = new Scanner(System.in);
-        Integer number = keyboard.nextInt();
+        Integer number;
 
         int computerNumber = (int) (Math.random()*100);
 
        do{
+           number = keyboard.nextInt();
            if (number>computerNumber) {
                System.out.println("Your number is too high.");
            }
