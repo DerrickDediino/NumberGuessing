@@ -13,8 +13,16 @@ public class Main {
         int computerNumber = (int) (Math.random()*100);
 
        do{
-           System.out.println("Your number is too high.");
-       }while (number>computerNumber);
+           if (number>computerNumber) {
+               System.out.println("Your number is too high.");
+           }
+           else if(number<computerNumber){
+               System.out.println("Your number is too low.");
+           }
+           else{
+               System.out.println("You got the number!!!");
+           }
+       }while (number!=computerNumber);
 
 
 
